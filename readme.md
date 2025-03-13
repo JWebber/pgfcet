@@ -20,20 +20,20 @@ The maps used in colorcet were produced by Peter Kovesi. More information is ava
 
 ## Example
 See `readme.pdf` for the output of the following example.
-> \usetikzlibrary{pgfcet}
-\pgfcetloadcmap{R3}
-
-\begin{figure}
-    \centering
-    \begin{tikzpicture}
-        \begin{axis}[colormap name=cet-R3, width=10cm]
-            \addplot3[
-            surf,
-            samples=50,
-            domain=-8:8]
-            {sin(deg(sqrt(x^2+y^2)))/sqrt(x^2+y^2)};
-        \end{axis}
-    \end{tikzpicture}
-    \caption{A sample plot}
-    \label{fig:example}
-\end{figure}
+>\usetikzlibrary{pgfcet}
+>\pgfcetloadcmap{R3}
+>
+>\begin{figure}
+>    \centering
+>    \begin{tikzpicture}
+>        \begin{axis}[colormap name=cet-R3, width=10cm]
+>            \addplot3[
+>            surf,
+>            samples=50,
+>            domain=-8:8]
+>            {sin(deg(sqrt(x^2+y^2)))/sqrt(x^2+y^2)};
+>        \end{axis}
+>    \end{tikzpicture}
+>    \caption{A sample plot}
+>    \label{fig:example}
+>\end{figure}
