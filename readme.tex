@@ -20,23 +20,23 @@
     \author{Joseph Webber (\href{mailto:joe.webber@warwick.ac.uk}{joe.webber@warwick.ac.uk})}
     \maketitle
 
-    The \texttt{pgfcet} package exposes the perceptually-uniform colourmaps presented by \href{https://colorcet.com}{colorcet.com} in a form suitable for use as colourmaps with the \texttt{pgfplots} library. You must be using \texttt{pgfplots} with \texttt{tikz} for the colourmaps to be available. Otherwise, the package has no dependencies besides the \texttt{xstring} package, which will be loaded if not yet imported.
+    The \texttt{pgfcet} package exposes the perceptually-uniform colour maps presented by \href{https://colorcet.com}{colorcet.com} in a form suitable for use as colourmaps with the \texttt{pgfplots} library. You must be using \texttt{pgfplots} with \texttt{tikz} for the colour maps to be available. Otherwise, the package has no dependencies besides the \texttt{xstring} package, which will be loaded if not yet imported.
 
     \subsection*{Usage}
-    To load the library of colourmaps, use the command
+    Installing the package is as simple as copying \texttt{tikzlibrarypgfcet.code.tex} into the same folder as the \LaTeX source file you are compiling. To load the library of colour maps, use the command
     \begin{lstlisting}
 \usetikzlibrary{pgfcet}
     \end{lstlisting}
-    and then load individual colourmaps using the macro
+    and then load individual colour maps using the macro
     \begin{lstlisting}
 \pgfcetloadcmap{XXX}
     \end{lstlisting}
-    where \texttt{XXX} is replaced by the identifier of the colourmap from the webpage \href{https://colorcet.com/gallery.html}{https://colorcet.com/gallery.html} (minus the CET- prefix), for example \texttt{L20} or \texttt{D01A}. To then use the colourmap, it can be loaded in an axis using the property
+    where \texttt{XXX} is replaced by the identifier of the colour map from the webpage \href{https://colorcet.com/gallery.html}{https://colorcet.com/gallery.html} (minus the CET- prefix), for example \texttt{L20} or \texttt{D01A}. To then use the colourmap, it can be loaded in an axis using the property
     \begin{lstlisting}
 colormap name=cet-XXX
     \end{lstlisting}
 
-    \subsection*{The colorcet colourmaps}
+    \subsection*{The colorcet colour maps}
     The maps used in colorcet were produced by Peter Kovesi. More information is available at \href{https://colorcet.com}{colorcet.com}, or in\\
 
     {\color{gray}
